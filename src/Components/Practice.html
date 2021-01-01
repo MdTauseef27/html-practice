@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function myfunction(){
+            document.getElementById("demo").innerHTML="paragrapg changes";
+        }
+    </script>
 </head>
 <body>
     <h1 style="color:red;text-align: center;">Wel Come To The World Of HTML.</h1>
+    <p id="demo">Java Script Can Change Html Content</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML='Hello Java Script'"">Click ME</button>
+    <button type="button" onclick="myfunction()">Try it</button>
+    <p id="demo"></p>
+    <button type="button" onclick="myfunction1()"> Try It Again</button>
+    <script>
+        var a=10;
+        var b=5;
+        var c=a+b;
+        document.write(5+6);
+        
+        document.write("Addition="+c);
+        function myfunction1(){
+            document.getElementById('demo').innerHTML="Again Paragraph Changed"
+        }
+    </script>
 </body>
 </html>
